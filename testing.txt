@@ -1,0 +1,13 @@
+#this file is create and written using write file feature in python
+# from testReadFile.py
+
+this is a text file
+where Python syntax is not followed
+We can just write whether we want to write hereprint("Test")
+print("Hellooooooooooooooooooooooooooooooooo")
+print("Test")
+print("Hellooooooooooooooooooooooooooooooooo")
+print("Test")
+print("Hellooooooooooooooooooooooooooooooooo")
+print("Test")
+print("Hellooooooooooooooooooooooooooooooooo")
