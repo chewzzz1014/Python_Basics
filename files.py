@@ -1,4 +1,4 @@
-#introductory operation on files
+#introductory operation on files part 1
 
 #open files and print the contents from randomText.txt in same directory
 
