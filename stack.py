@@ -7,7 +7,7 @@ class Stack():
         self.stack = list()
 
     def push(self, *item):
-        if len(item)==0:
+        if len(item)==1:
             self.stack.append(item)
         else:
             self.stack.extend(item)
