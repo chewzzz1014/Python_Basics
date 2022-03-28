@@ -1,8 +1,11 @@
 # tested in test1.py
 
 
-def formatted_name(first, last):
-    return (first+" "+last).title()
+def formatted_name(first, last, middle=""):
+    if middle:
+        return (first+" "+middle+" "+last).title()
+    else:
+        return (first+" "+last).title()
 
 def print_formatted_name(name):
     print("Hello,", name,"!")
