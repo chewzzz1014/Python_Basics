@@ -1,4 +1,4 @@
-# test name_function.py
+# unit test name_function.py
 
 import unittest
 import sys

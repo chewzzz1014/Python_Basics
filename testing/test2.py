@@ -1,4 +1,4 @@
-# test on city_function.py
+# unit test on city_function.py
 
 from city_function import city_country
 import unittest
