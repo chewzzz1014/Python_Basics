@@ -1,6 +1,6 @@
 # Python_Basics
-Below lists my (include but not limited to) primary references, as well as my book list in journey of learning Python fundamental.  :grinning:
 
+My Target
    - [ ] \(**In Progress**\) Python Crash Course, 2nd Edition: A Hands-On, Project-Based Introduction to Programming by Eric Matthes
    - [ ] Learning Python: Powerful Object-Oriented Programming by Mark Lutz
    - [ ] Programming Python by Mark Lutz
