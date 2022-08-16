@@ -1,1 +1,1 @@
-- Files generated and used from notebook, exercises and assignments from Data Analysis with Python: Zero to Pandas course provided by jovian.ai.
+- Files generated and used from [notebook, exercises and assignments](https://github.com/chewzzz1014/Python_Basics/tree/main/jovian-courses) from [Data Analysis with Python: Zero to Pandas course](https://jovian.ai/learn/data-analysis-with-python-zero-to-pandas) provided by jovian.ai.
