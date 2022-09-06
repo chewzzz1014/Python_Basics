@@ -19,7 +19,13 @@ msg_8 = " ... very, very lazy"
 
 msg_9 = "You are"
 
-msgs = [msg_0, msg_1, msg_2, msg_3, msg_4, msg_5, msg_6, msg_7, msg_8, msg_9]
+msg_10 = "Are you sure? It is only one digit! (y / n)"
+
+msg_11 = "Don't be silly! It's just one number! Add to the memory? (y / n)"
+
+msg_12 = "Last chance! Do you really want to embarrass yourself? (y / n)"
+
+msgs = [msg_0, msg_1, msg_2, msg_3, msg_4, msg_5, msg_6, msg_7, msg_8, msg_9, msg_10, msg_11, msg_12]
 
 
 def is_one_digit(v):
@@ -89,7 +95,7 @@ while not_complete:
                 if is_one_digit(result):
                     msg_index = 10
                     while True:
-                        ans = input(msgs[msg_index - 1])
+                        ans = input(msgs[msg_index])
                         if ans == "y":
                             if msg_index < 12:
                                 msg_index += 1
@@ -101,27 +107,24 @@ while not_complete:
                             break
                         else:
                             continue
-                    else:
-                        memory = result
-                        break
-            else:
-                memory = result
+                else:
+                    memory = result
                 break
             elif to_store == "n":
-            break
-        else:
-            continue
+                break
+            else:
+                continue
 
-    while True:
-        to_cont = input(msg_5 + "\n").strip()
-        if to_cont == "y":
-            break
-        elif to_cont == "n":
-            not_complete = False
-            break
-        else:
-            continue
+        while True:
+            to_cont = input(msg_5 + "\n").strip()
+            if to_cont == "y":
+                break
+            elif to_cont == "n":
+                not_complete = False
+                break
+            else:
+                continue
 
-else:
-    print(msg_2)
+    else:
+        print(msg_2)
 
