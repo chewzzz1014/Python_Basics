@@ -1,1 +1,2 @@
-Projects created for [Flask Developer](https://hyperskill.org/tracks/29?category=1) Track learning on Hyperskill
+- Projects created for [Flask Developer](https://hyperskill.org/tracks/29?category=1) Track learning on Hyperskill
+- [Project details, topics covered and instruction for implementation](https://hyperskill.org/projects/208)
