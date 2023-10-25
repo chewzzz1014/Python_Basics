@@ -21,3 +21,18 @@ print(f" - {skill1} ({level1})")
 print(f" - {skill2} ({level2})")
 print(f" - {skill3} ({level3})")
 print(f"\nI am looking for a job with a salary of {lower}-{upper} euros per month")
+
+x = 27
+y = 15
+print(f'{x} + {y} = {x+y}')
+print(f'{x} - {y} = {x-y}')
+print(f'{x} * {y} = {x*y}')
+print(f'{x} / {y} = {x/y}')
+
+print(5, end='')
+print(" + ", end='')
+print(8, end='')
+print(" - ", end='')
+print(4, end='')
+print(" = ", end='')
+print(5 + 8 - 4)
