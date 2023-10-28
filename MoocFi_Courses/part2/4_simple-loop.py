@@ -43,13 +43,37 @@ while not found:
 print(f'The next leap year after {year} is {leap}')
 
 result = ''
-prevWord = input('Please type in a word:')
-while prevWord != 'end':
-    result += prevWord + ' '
-    word = input('Please type in a word:')
-    if word == 'end' or word == prevWord:
+word1 = input('Please type in a word:')
+word2 = ''
+while word1 != 'end':
+    if word2 == word1:
         break
     else:
-        result += word + ' '
-    prevWord = input('Please type in a word:')
+        result += word1 + ' '
+    word2 = input('Please type in a word:')
+    if word2 == 'end' or word2 == word1:
+        break
+    else:
+        result += word2 + ' '
+    word1 = input('Please type in a word:')
 print(result)
+
+print('Please type in integer numbers. Type in 0 to finish.')
+n = int(input('Number:'))
+count = 0
+sum = 0
+positiveCount = 0
+negativeCount = 0
+while n != 0:
+    count += 1
+    sum += n
+    if n > 0:
+        positiveCount += 1
+    else:
+        negativeCount += 1
+    n = int(input('Number:'))
+print(f'Number typed in {count}')
+print(f'The sum of the numbers is {sum}')
+print(f'The sum of the numbers is {sum/count}')
+print(f'Positive numbers {positiveCount}')
+print(f'Negative numbers {negativeCount}')
