@@ -60,3 +60,21 @@ while action != 3:
     action = int(input('command (1 search, 2 add, 3 quit):'))
 print('quitting...')
 
+def add_movie(database: list, name: str, director: str, year: int, runtime: int):
+    database.append({
+        'name': name,
+        'director': director,
+        'year': year,
+        'runtime': runtime
+    })
+
+def find_movies(database: list, search_term: str):
+    result = []
+    for movie in database:
+        if search_term.lower() in movie['name'].lower():
+            print('111')
+            result.append(movie)
+    return result
+
+
+
