@@ -143,4 +143,43 @@ def search_by_time(filename: str, prep_time: int):
 
 def search_by_ingredient(filename: str, ingredient: str):
     # TODO
+    return ''
 
+#################################################
+def get_station_data(filename: str):
+    result = {}
+    with open(filename) as rf:
+        for line in rf:
+            parsed_items = line.replace('\n', '').split(';')
+            if parsed_items[0] == 'Longitude':
+                continue
+            else:
+                result[parsed_items[3]] = (float(parsed_items[0]), float(parsed_items[1]))
+    return result
+
+def distance(stations: dict, station1: str, station2: str):
+    s1 = stations[station1]
+    s2 = stations[station2]
+    x_km = (s1[0] - s2[0]) * 55.26
+    y_km = (s1[1] - s2[1]) * 111.2
+    distance_km = math.sqrt(x_km**2 + y_km**2)
+    return distance_km
+
+def greatest_distance(stations: dict):
+    max_dist = 0
+    max_s1 = ''
+    max_s2 = ''
+    station_names = list(stations.keys())
+    s1 = 0
+
+    while s1<len(station_names)-1:
+        s2 = s1 + 1
+        while s2<len(station_names):
+            dist = distance(stations, station_names[s1], station_names[s2])
+            if dist>max_dist:
+                max_dist = dist
+                max_s1 = station_names[s1]
+                max_s2 = station_names[s2]
+            s2 += 1
+        s1 += 1
+    return max_s1, max_s2, max_dist
