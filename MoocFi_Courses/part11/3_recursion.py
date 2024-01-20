@@ -1,0 +1,11 @@
+def add_numbers_to_list(numbers: list):
+    if len(numbers)%5 != 0:
+        numbers.append(numbers[-1]+1)
+        add_numbers_to_list(numbers)
+
+def recursive_sum(number: int):
+    if number<=1:
+        return number
+    return number + recursive_sum(number-1)
+
+
