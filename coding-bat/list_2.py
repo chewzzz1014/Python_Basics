@@ -47,3 +47,15 @@ def has22(nums):
     else:
       has_prev=-1
   return False
+
+def sum67(nums):
+  total = 0
+  has_prev = False
+  for x in nums:
+    if x==6 and not has_prev:
+      has_prev = True
+    elif x==7 and has_prev:
+      has_prev=False
+    elif not has_prev:
+      total += x
+  return total
