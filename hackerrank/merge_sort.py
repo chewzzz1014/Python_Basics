@@ -9,7 +9,7 @@ def combine(arr1, arr2):
     idx1, idx2 = 0, 0
     merged = []
     while idx1<len(arr1) and idx2<len(arr2):
-        if arr1[idx1]<arr2[idx2]:
+        if arr1[idx1]<=arr2[idx2]:
             merged.append(arr1[idx1])
             idx1 += 1
         else:
